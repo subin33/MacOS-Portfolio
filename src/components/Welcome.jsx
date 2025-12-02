@@ -23,11 +23,16 @@ const setupTextHover = (container, type) => {
   const letters = container.querySelectorAll("span"); // 모든 span 요소 저장
   const { min, max, default: base } = FONT_WEIGHT[type]; //FONT_WEIGHT 구조분해 할당
 
-  const animateLetter = (letter, weight, duration = 0.25) => {
+  const animateLetter = (letter, intensity, duration = 0.25) => {
+    const weight = min + (max - min) * intensity; // map [0,1] -> [min,max]
+
     return gsap.to(letter, {
       duration, // 실행시간
       ease: "power2.out", // 처음은 좀 빠르게, 갈수록 천천히 멈추는 곡선
       fontVariationSettings: `'wght' ${weight}`, // 굵기 애니메이션
+      y: -10 * intensity,
+      scale: 1 + 0.2 * intensity,
+      overwrite: "auto",
     });
   };
 
@@ -47,11 +52,31 @@ const setupTextHover = (container, type) => {
       const intensity = Math.exp(-(distance ** 2) / 2000);
 
       // 3. 강도에 따라 글자 굵기 정하기
-      animateLetter(letter, min + (max - min) * intensity);
+      animateLetter(letter, intensity);
+    });
+  };
+
+  const handleMouseLeave = () => {
+    letters.forEach((letter) => {
+      gsap.to(letter, {
+        duration: 0.4,
+        ease: "power2.out",
+        fontVariationSettings: `'wght' ${base}`,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+      });
     });
   };
 
   container.addEventListener("mousemove", handleMouseMove);
+  container.addEventListener("mouseleave", handleMouseLeave);
+
+  // cleanup fn
+  return () => {
+    container.removeEventListener("mousemove", handleMouseMove);
+    container.removeEventListener("mouseleave", handleMouseLeave);
+  };
 };
 
 function Welcome() {
@@ -59,12 +84,14 @@ function Welcome() {
   const subtitleRef = useRef(null);
 
   useGSAP(() => {
-    // container 영역 찍어보기
-    // titleRef.current.style.outline = "2px solid red";
+    const titleCleanup = setupTextHover(titleRef.current, "title");
+    const subtitleCleanup = setupTextHover(subtitleRef.current, "subtitle");
 
-    setupTextHover(titleRef.current, "title");
-    setupTextHover(subtitleRef.current, "subtitle");
-  });
+    return () => {
+      subtitleCleanup();
+      titleCleanup();
+    };
+  }, []);
 
   return (
     <section id="welcome">
