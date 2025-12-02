@@ -18,7 +18,7 @@ const renderText = (text, className, baseWeight = 400) => {
 };
 
 const setupTextHover = (container, type) => {
-  if (!container) return;
+  if (!container) return () => {}; // cleanup을 반드시 반환해야 하는 함수 이기 때문에, 두 cleanup 중 하나라도 undefined 라면 바로 오류 때문에, container 가 없으면 아무 일도 안 하는 cleanup함수 반환
 
   const letters = container.querySelectorAll("span"); // 모든 span 요소 저장
   const { min, max, default: base } = FONT_WEIGHT[type]; //FONT_WEIGHT 구조분해 할당
