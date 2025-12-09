@@ -135,15 +135,15 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
+    text: "Notion",
+    icon: "/icons/notion.svg",
     bg: "#4bcb63",
     link: "https://jsmastery.com/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
+    text: "Blog/X",
+    icon: "/icons/blog.svg",
     bg: "#ff866b",
     link: "https://x.com/jsmasterypro",
   },
@@ -187,19 +187,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/temp1.png",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/temp2.png",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/temp3.png",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/temp4.png",
   },
 ];
 
@@ -215,7 +215,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Project 1",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -223,21 +223,16 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Project 1.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
-          description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-          ],
+          description: ["Project 1"],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "Project.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -246,7 +241,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "Project.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -268,7 +263,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Project2",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -276,21 +271,16 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Project2.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
-          description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-          ],
+          description: ["Project2"],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "Project2.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -299,7 +289,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "Project2.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -321,7 +311,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Project3",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -329,21 +319,16 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Project3.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
-          description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
-          ],
+          description: ["Project3"],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "Project3.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -352,7 +337,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "Project3.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -490,6 +475,7 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  archive: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

@@ -95,7 +95,7 @@ function Welcome() {
 
   return (
     <section id="welcome">
-      <p ref={subtitleRef}>{renderText("Hey, I'm Subin! Welcome to my", "text-3x1 font-georama", 100)}</p>
+      <p ref={subtitleRef}>{renderText("Hey, I'm Subin! Welcome to my", "text-3xl font-georama", 100)}</p>
       <h1 ref={titleRef} className="mt-7">
         {renderText("Portfolio", "text-9xl italic font-georama")}
       </h1>

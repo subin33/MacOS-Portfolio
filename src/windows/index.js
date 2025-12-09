@@ -5,4 +5,7 @@ import Finder from "./Finder.jsx";
 import Text from "./Text.jsx";
 import Image from "./Image.jsx";
 import Contact from "./Contact.jsx";
-export { Terminal, Safari, Resume, Finder, Text, Image, Contact };
+import Photos from "./Photos.jsx";
+import Archive from "./Archive.jsx";
+
+export { Terminal, Safari, Resume, Finder, Text, Image, Contact, Photos, Archive };
