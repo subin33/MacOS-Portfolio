@@ -22,7 +22,7 @@ const Safari = () => {
           <div className="search">
             <Search className="icon" />
 
-            <input typ="text" placeholder="Search or enter website name" />
+            <input type="text" placeholder="Search or enter website name" />
           </div>
         </div>
 
