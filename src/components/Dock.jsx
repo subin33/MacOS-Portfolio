@@ -60,7 +60,22 @@ const Dock = () => {
   }, []);
 
   const toogleApp = (app) => {
-    // Implement Open Window Logic
+    if (!app.canOpen) return;
+
+    // Map trash to archive window
+    const windowId = app.id === "trash" ? "archive" : app.id;
+    const window = windows[windowId];
+
+    if (!window) {
+      console.error(`window not for app: ${app.id}`);
+      return;
+    }
+
+    if (window.isOpen) {
+      closeWindow(windowId);
+    } else {
+      openWindow(windowId);
+    }
   };
 
   return (
