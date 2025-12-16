@@ -14,7 +14,7 @@ const Contact = () => {
         <img src="/images/profile-img.jpg" alt="Profile Img" className="w-27 h-30 rounded-full object-cover" />
 
         <h3>Let's Connect</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
+        <p>Feel free to reach out anytime!</p>
         <p>lowerbin@naver.com</p>
 
         <ul>
