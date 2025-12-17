@@ -77,24 +77,24 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title: "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.webp",
-    link: "#",
+    date: "Dec 15, 2025",
+    title: "MacOS 스타일 멀티 윈도우 UI를 어떻게 설계했는가",
+    image: "/images/blog1.png",
+    link: "https://blog-kappa-woad-43.vercel.app/blog/macos-style-multi-window-ui",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    date: "Dec 16, 2025",
+    title: "Zustand로 윈도우 상태를 설계한 이유",
     image: "/images/blog2.png",
-    link: "#",
+    link: "https://blog-kappa-woad-43.vercel.app/blog/zustand-multi-window-ui",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
+    date: "Dec 17, 2025",
+    title: "GSAP Draggable + React에서의 라이프사이클 이슈",
     image: "/images/blog3.png",
-    link: "#",
+    link: "https://blog-kappa-woad-43.vercel.app/blog/gsap-react-lifecycle",
   },
 ];
 
@@ -149,10 +149,10 @@ const socials = [
   },
   {
     id: 4,
-    text: "LinkedIn",
-    icon: "/icons/linkedin.svg",
+    text: "Portfolio",
+    icon: "/images/portfolio.png",
     bg: "#05b6f6",
-    link: "#",
+    link: "https://www.canva.com/design/DAG2eeqLliI/Nry1af7d0uqvDEGsSEzlYA/view?utm_content=DAG2eeqLliI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc138638866",
   },
 ];
 
@@ -434,7 +434,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "Wine-Bliss.fig",
-          icon: "/images/plain.png",
+          icon: "/images/figma.png",
           kind: "file",
           fileType: "fig",
           href: "https://www.figma.com/proto/7a9IsVd62yDmBLYw2YCDC1/Wine-Bliss?node-id=8-3&starting-point-node-id=8%3A2",
