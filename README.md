@@ -18,7 +18,7 @@ Users can explore the portfolio by moving, stacking, and switching focus between
 | **PDF 이력서 뷰어**             | react-pdf를 활용한 이력서 미리보기 및 다운로드                         |
 | **반응형 기본 대응**            | 데스크톱 환경 최적화, 모바일은 제한적 지원                             |
 | **애니메이션 전환 효과**        | 창 열기/닫기 시 scale & fade 애니메이션 적용                           |
-| **마우스 인터랙션 효과**        | 마우스 거리 기반으로 텍# MacOS-Portfolio 💻
+| **마우스 인터랙션 효과**        | 마우스 거리 기반으로 텍스트 MacOS-Portfolio 💻
 
 This is an interactive portfolio that recreates the macOS desktop environment on the web. The goal was to implement the functionalities of a real desktop operating system—such as a multi-window system, dragging, focus management, and z-index handling—in a web UI, rather than creating a simple, static introductory page. Individual applications like Finder, Safari, Terminal, Photos, Resume, and Contact all operate as independent windows and can be launched and closed via the Dock.
 
