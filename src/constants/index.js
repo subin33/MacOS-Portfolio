@@ -97,11 +97,10 @@ const blogPosts = [
     link: "https://blog-kappa-woad-43.vercel.app/blog/gsap-react-lifecycle",
   },
 ];
-
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["Vue.js", "React.js", "Next.js", "JavaScript", "TypeScript"],
   },
   {
     category: "Mobile",
@@ -109,19 +108,19 @@ const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "NestJS"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MariaDB", "Supabase"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub"],
   },
 ];
 
