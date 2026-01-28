@@ -242,7 +242,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://garfield-theme-portfolio.netlify.app/",
+          href: "https://2026-portfolio-eosin.vercel.app/",
           position: "top-10 right-20",
         },
         {
