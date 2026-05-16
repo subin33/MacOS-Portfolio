@@ -5,11 +5,12 @@ import useWindowStore from "#store/Window";
 import React from "react";
 
 const Archive = () => {
-  const { openWindow } = useWindowStore();
+  const { openWindow, focusWindow } = useWindowStore();
 
   const openItem = (item) => {
     if (item.fileType === "txt") {
       openWindow("txtfile", item);
+      focusWindow("txtfile");
     } else if (item.fileType === "img") {
       openWindow("imgfile", {
         name: item.name,
@@ -17,7 +18,8 @@ const Archive = () => {
         kind: "file",
         fileType: "img",
         imageUrl: item.imageUrl,
-      }); 
+      });
+      focusWindow("imgfile");
     }
   };
 

@@ -115,7 +115,11 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply relative flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+
+    > h2 {
+      @apply absolute left-1/2 -translate-x-1/2 max-w-[calc(100%-8rem)] truncate font-bold text-sm text-center text-gray-700;
+    }
   }
 
   #safari {
@@ -173,23 +177,29 @@ body {
       @apply text-sm font-roboto p-5;
 
       .label {
-        @apply flex items-center ms-10 mt-7;
+        @apply grid grid-cols-[8rem_1fr] gap-5 ms-10 mt-7 text-xs uppercase tracking-wide text-gray-400;
       }
 
       .content {
-        @apply py-5 my-5 border-y border-dashed space-y-1;
+        @apply py-4 my-5 border-y border-dashed space-y-3;
 
-        li {
+        .stack-row {
+          @apply grid grid-cols-[1.25rem_8rem_minmax(0,1fr)] items-start gap-5 rounded-md px-3 py-2 transition-colors hover:bg-gray-50;
+
           .check {
-            @apply text-[#00A154] w-5;
+            @apply text-[#00A154] w-5 mt-0.5;
           }
 
           h3 {
-            @apply font-semibold text-[#00A154] w-32 ms-5;
+            @apply font-semibold text-[#00A154] leading-7;
           }
 
-          ul {
-            @apply flex items-center gap-3;
+          .stack-items {
+            @apply flex flex-wrap items-center gap-2;
+
+            li {
+              @apply rounded border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs leading-none text-gray-700;
+            }
           }
         }
       }

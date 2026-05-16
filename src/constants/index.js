@@ -97,30 +97,23 @@ const blogPosts = [
     link: "https://blog-kappa-woad-43.vercel.app/blog/gsap-react-lifecycle",
   },
 ];
+
 const techStack = [
   {
     category: "Frontend",
-    items: ["Vue.js", "React.js", "Next.js", "JavaScript", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "CSS"],
+    items: ["Vue.js", "React", "Next.js", "JavaScript", "TypeScript"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS"],
+    items: ["Node.js", "Express.js"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "MariaDB", "Supabase"],
+    items: ["MySQL", "MariaDB", "MongoDB"],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub"],
+    category: "Tools / Deployment",
+    items: ["Git", "Notion", "Vercel", "Netlify"],
   },
 ];
 
@@ -132,13 +125,13 @@ const socials = [
     bg: "#f4656b",
     link: "https://github.com/subin33",
   },
-  {
-    id: 2,
-    text: "Notion",
-    icon: "/images/notion.png",
-    bg: "#4bcb63",
-    link: "https://wirehaired-dimple-7ea.notion.site/NohSubin-1cecfaa56dff808e8bbbea12f77a08ea",
-  },
+  // {
+  //   id: 2,
+  //   text: "Notion",
+  //   icon: "/images/notion.png",
+  //   bg: "#4bcb63",
+  //   link: "https://wirehaired-dimple-7ea.notion.site/NohSubin-1cecfaa56dff808e8bbbea12f77a08ea",
+  // },
   {
     id: 3,
     text: "Blog",
@@ -148,10 +141,10 @@ const socials = [
   },
   {
     id: 4,
-    text: "Portfolio",
+    text: "Resume",
     icon: "/images/portfolio.png",
     bg: "#05b6f6",
-    link: "https://www.canva.com/design/DAG2eeqLliI/Nry1af7d0uqvDEGsSEzlYA/view?utm_content=DAG2eeqLliI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc138638866",
+    link: "https://portfolio-subin.my.canva.site/subin",
   },
 ];
 
@@ -217,8 +210,8 @@ const WORK_LOCATION = {
       name: "Garfield-Portfolio",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[6vh] left-10", // optional: Finder window position
+      position: "top-38 left-5", // icon position inside Finder
+      windowPosition: "top-[54vh] left-10", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -431,8 +424,8 @@ const WORK_LOCATION = {
       name: "Wine-Bliss",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-38 left-5",
-      windowPosition: "top-[54vh] left-14",
+      position: "top-38 left-61",
+      windowPosition: "top-[78vh] left-14",
       children: [
         {
           id: 1,
@@ -546,8 +539,8 @@ const WORK_LOCATION = {
       name: "My-Blog",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-38 left-61",
-      windowPosition: "top-[78vh] left-14",
+      position: "top-10 left-5",
+      windowPosition: "top-[6vh] left-14",
       children: [
         {
           id: 1,
@@ -604,15 +597,6 @@ const ABOUT_LOCATION = {
   children: [
     {
       id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/me.jpg",
-    },
-    {
-      id: 2,
       name: "coder's joke.png",
       icon: "/images/image.png",
       kind: "file",
@@ -621,7 +605,7 @@ const ABOUT_LOCATION = {
       imageUrl: "/images/joke-1.jpg",
     },
     {
-      id: 3,
+      id: 2,
       name: "coder's meme.png",
       icon: "/images/image.png",
       kind: "file",
@@ -630,30 +614,15 @@ const ABOUT_LOCATION = {
       imageUrl: "/images/joke-2.jpg",
     },
     {
-      id: 4,
+      id: 3,
       name: "about-me.txt",
       icon: "/images/txt.png",
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      // subtitle: "Meet the Developer Behind the Code",
-      // image: "/images/profile-img.jpg",
       description: [
-        "Hi, I’m Subin 👋, a frontend developer with 1 year and 8 months of experience leading the planning, development, and operation of a web and app-based in-house service.",
-        "At my previous company, I worked with Vue.js, Vuex, and Vue Router to build interactive UIs, manage complex state, and implement role-based access control.",
-        "I focused on delivering a consistent user experience across devices by applying PWA features and optimizing for mobile environments.",
-        "Currently, I work with React, Next.js, TypeScript, Tailwind CSS, and GSAP to build modern frontend projects, expanding my skills in responsive interfaces, animations, and performance optimization.",
-        "I believe frontend development is not just about implementing features, but about carefully designing structures and interactions that create the best possible experience for users.",
-        "I strive to continuously learn, actively listen to my team, and grow as a developer who creates real, meaningful value through well-crafted services.",
+        "Hello 👋, I am a developer who values both user flow and data structure. I believe that building intuitive and stable structures for users is just as important as implementing features themselves. At my previous company, I worked for 1 year and 8 months maintaining services in a Vue-based SPA environment, focusing on role-based UI, state management, and performance optimization. Currently, I am expanding my skills through projects using React, Next.js, and TypeScript, with a focus on data flow, rendering architecture, caching strategies, and component design. Moving forward, I aim to grow as a developer who creates stable and scalable services while considering both user experience and overall service architecture.",
       ],
-      // description: [
-      //   "안녕하세요. 웹·앱 기반 자사 서비스를 기획부터 개발, 운영까지 전반적으로 주도한 경험을 보유한 프론트엔드 개발자 수빈입니다.",
-      //   "이전 회사에서는 Vue.js, Vuex, Vue Router를 활용해 인터랙티브한 UI를 구현하고, 복잡한 상태 관리와 사용자 권한 기반 화면 구성을 담당했습니다.",
-      //   "PWA 적용과 모바일 최적화를 통해 다양한 디바이스 환경에서도 일관된 사용자 경험을 제공하는 데 집중했습니다.",
-      //   "현재는 React, Next.js, TypeScript, Tailwind CSS, GSAP 등을 활용한 모던 프론트엔드 프로젝트를 진행하며, 반응형 인터페이스, 애니메이션, 성능 최적화 역량을 확장하고 있습니다.",
-      //   "저는 프론트엔드 개발이 단순히 기능을 구현하는 역할이 아니라, 사용자에게 최적의 경험을 제공하기 위한 구조와 인터랙션을 설계하는 과정이라고 생각합니다.",
-      //   "앞으로도 지속적으로 학습하며 팀의 목소리에 귀 기울이고, 실질적인 서비스 가치를 만들어내는 개발자로 성장하고자 합니다.",
-      // ],
     },
   ],
 };
